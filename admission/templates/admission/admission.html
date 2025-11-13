@@ -14,6 +14,12 @@
   <!--link rel="stylesheet" href="css/admission.css" /-->
 </head>
 <body>
+  <!-- In admission.html - Add navigation buttons -->
+<div class="action-buttons" style="display: flex; gap: 15px; justify-content: center; margin-top: 30px;">
+    <a href="{% url 'admission:admission_online' %}" class="nav-btn primary">Apply Online</a>
+    <a href="{% url 'admission:student_login' %}" class="nav-btn">Student Login</a>
+    <a href="{% url 'admission:index' %}" class="nav-btn">Back to Home</a>
+</div>
   <div id="nav-loader-adm" class="nav-loader" aria-hidden="true">
     <div class="nav-loader-bar"></div>
   </div>

@@ -17,19 +17,21 @@
   <!--link rel="stylesheet" href="css/online.css" /-->
 </head>
 <body>
-  <header class="online-header">
+<!-- In admission_online.html - Update the header section -->
+<header class="online-header">
     <div class="left">
-      <img src="https://uap-bd.edu/img/logo.png" alt="UAP Logo" />
-      <div>
-        <h1>Admission Online</h1>
-        <small>Apply • Upload • Pay • Track</small>
-      </div>
+        <img src="https://uap-bd.edu/img/logo.png" alt="UAP Logo" />
+        <div>
+            <h1>Admission Online</h1>
+            <small>Apply • Upload • Pay • Track</small>
+        </div>
     </div>
     <div class="right">
-      <a href="index.html" class="btn ghost">← Home</a>
-      <button id="openDashboard" class="btn primary">My Dashboard</button>
+        <a href="{% url 'admission:index' %}" class="nav-btn">Home</a>
+        <a href="{% url 'admission:student_login' %}" class="nav-btn">Student Login</a>
+        <a href="{% url 'admission:login' %}" class="nav-btn">Staff Login</a>
     </div>
-  </header>
+</header>
 
   <main class="container">
     <!-- Fees & Program selector -->
